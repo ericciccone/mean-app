@@ -1,3 +1,7 @@
+#LOGIN FOR APP:
+#username: test@test.com
+#password: 0wsleynips!
+
 # MeanApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
