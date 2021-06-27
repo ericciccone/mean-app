@@ -1,6 +1,4 @@
-# LOGIN FOR APP:
-# username: test@test.com
-# password: 0wsleynips!
+# LOGIN FOR APP IS IN THE WORLDCLASS SUBMISSION
 
 # MeanApp
 
