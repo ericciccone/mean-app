@@ -1,5 +1,8 @@
 # LOGIN FOR APP IS IN THE WORLDCLASS SUBMISSION
 
+# Features:
+-Login/Authentication, RESTful API (GET, POST, PUT, DELETE) via Form submission and edit/delete buttons.
+
 # MeanApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
