@@ -1,0 +1,61 @@
+<div class="container">
+    <form (ngSubmit)="insertData()" [formGroup]="form">
+        <div class="form-group">
+            <label for="campus">Campus</label>
+            <input type="text" formControlName="campus" [ngClass]="{
+                'is-invalid':submitted && f.campus.errors }" class="form-control" placeholder="Enter campus">
+            <div *ngIf="submitted && f.campus.errors" class="invalid-feedback">
+            <div *ngIf="f.campus.errors.required">Campus is Required</div>
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label for="building">Building</label>
+          <input type="text" formControlName="building" [ngClass]="{
+              'is-invalid':submitted && f.building.errors }" class="form-control" placeholder="Enter building">
+          <div *ngIf="submitted && f.building.errors" class="invalid-feedback">
+          <div *ngIf="f.building.errors.required">Building is Required</div>
+      </div>
+      </div>
+
+      <div class="form-group">
+        <label for="room">Room</label>
+        <input type="text" formControlName="room" [ngClass]="{
+            'is-invalid':submitted && f.room.errors }" class="form-control" placeholder="Enter room">
+        <div *ngIf="submitted && f.room.errors" class="invalid-feedback">
+        <div *ngIf="f.room.errors.required">Room is Required</div>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label for="projectorCount">Projector Count</label>
+      <input type="text" formControlName="projectorCount" [ngClass]="{
+          'is-invalid':submitted && f.projectorCount.errors }" class="form-control" placeholder="Enter number of projectors">
+      <div *ngIf="submitted && f.projectorCount.errors" class="invalid-feedback">
+      <div *ngIf="f.projectorCount.errors.required">Projector is Required</div>
+  </div>
+  </div>
+
+  <div class="form-group">
+    <label for="projectorModel">Projector Model</label>
+    <input type="text" formControlName="projectorModel" [ngClass]="{
+        'is-invalid':submitted && f.projectorModel.errors }" class="form-control" placeholder="Enter model">
+    <div *ngIf="submitted && f.projectorModel.errors" class="invalid-feedback">
+    <div *ngIf="f.projectorModel.errors.required">Projector Model is Required</div>
+</div>
+</div>
+
+<div class="form-group">
+  <label for="projectorIP">Projector IP</label>
+  <input type="text" formControlName="projectorIP" [ngClass]="{
+      'is-invalid':submitted && f.projectorIP.errors }" class="form-control" placeholder="Enter IP">
+  <div *ngIf="submitted && f.projectorIP.errors" class="invalid-feedback">
+  <div *ngIf="f.projectorIP.errors.required">Projector IP is Required</div>
+</div>
+</div>
+
+        <div class="form-group">
+            <button class="btn btn-dark btn-sm mt-4">Submit</button>
+        </div>
+    </form>
+</div>

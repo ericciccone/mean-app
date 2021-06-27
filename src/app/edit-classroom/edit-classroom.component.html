@@ -1,0 +1,43 @@
+<div class="container">
+    <form (ngSubmit)="updateData()" [formGroup]="form">
+        <div class="form-group">
+            <label for="campus">Campus</label>
+            <input type="text" formControlName="campus" class="form-control" placeholder="Enter Campus">
+
+        </div>
+
+        <div class="form-group">
+            <label for="building">Building</label>
+            <input type="text" formControlName="building" class="form-control" placeholder="Enter Building">
+
+        </div>
+
+        <div class="form-group">
+            <label for="room">Room</label>
+            <input type="text" formControlName="room" class="form-control" placeholder="Enter Room">
+
+        </div>
+
+        <div class="form-group">
+          <label for="projectorCount">Projector Count</label>
+          <input type="text" formControlName="projectorCount" class="form-control" placeholder="Enter Count">
+
+        </div>
+
+        <div class="form-group">
+          <label for="projectorModel">Projector Model</label>
+          <input type="text" formControlName="projectorModel" class="form-control" placeholder="Enter Model">
+
+        </div>
+
+        <div class="form-group">
+          <label for="projectorIP">Room</label>
+          <input type="text" formControlName="projectorIP" class="form-control" placeholder="Enter IP">
+
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-dark btn-sm mt-4">Submit</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+<div class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Campus</th>
+            <th scope="col">Building</th>
+            <th scope="col">Room</th>
+            <th scope="col">Projector Count</th>
+            <th scope="col">Projector Model</th>
+            <th scope="col">Projector IP</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let clssrm of classroom; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ clssrm.campus }}</td>
+            <td>{{ clssrm.building }}</td>
+            <td>{{ clssrm.room }}</td>
+            <td>{{ clssrm.projectorCount }}</td>
+            <td>{{ clssrm.projectorModel }}</td>
+            <td>{{ clssrm.projectorIP }}</td>
+            <td>
+                <button class="btn btn-primary btn-sm mx-auto" routerLink="edit/{{ clssrm._id}}">Edit</button>
+                <button class="btn btn-danger btn-sm mx-auto" (click)="deleteData(clssrm._id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</div>
