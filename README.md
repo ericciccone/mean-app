@@ -1,6 +1,6 @@
-#LOGIN FOR APP:
-#username: test@test.com
-#password: 0wsleynips!
+# LOGIN FOR APP:
+# username: test@test.com
+# password: 0wsleynips!
 
 # MeanApp
 
